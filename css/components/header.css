@@ -1,0 +1,39 @@
+@import url('../base/variables.css');
+
+/* navbar styling */
+header {
+    background: var(--primary-color);
+}
+
+.navbar {
+    display: flex;
+    padding:  var(--spacing-sm);
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: var(--site-max-width);
+}
+
+.navbar__logo-text {
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.navbar__menu {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.navbar__link {
+    padding: var(--spacing-2xs) var(--spacing-sm);
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+.navbar__link:hover {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
