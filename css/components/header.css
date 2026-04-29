@@ -3,6 +3,9 @@
 /* navbar styling */
 header {
     background: var(--primary-color);
+    width: 100%;
+    z-index: 5;
+    position: fixed;
 }
 
 .navbar {
