@@ -38,8 +38,10 @@
     --spacing-sm: calc(var(--spacing-unit) * 4); /* 16px */
 
     --spacing-md: calc(var(--spacing-unit) * 6); /* 24px */
-    --spacing-md: calc(var(--spacing-unit) *8); /* 32px */
-    --spacing-lg: calc(var(--spacing-unit) *12); /* 48px */
-    --spacing-lg: calc(var(--spacing-unit) *16); /* 64px */
-    /* Navbar padding */
+    --spacing-lg: calc(var(--spacing-unit) *8); /* 32px */
+    --spacing-xl: calc(var(--spacing-unit) *12); /* 48px */
+    --spacing-2xl: calc(var(--spacing-unit) *16); /* 64px */
+    
+    /* Image-width */
+    --image-width: 31.25rem;
 }
