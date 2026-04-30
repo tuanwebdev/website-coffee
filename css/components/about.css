@@ -1,5 +1,5 @@
-section {
-    padding: calc(var(--spacing-unit) * 30) 0;
+.about {
+    padding: var(--spacing-sm);
     background: var(--light-pink-color);
 
 }

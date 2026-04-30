@@ -1,0 +1,108 @@
+.menu__title {
+    text-align: center;
+    padding: var(--spacing-2xl) 0 calc(var(--spacing-unit) * 25);
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+}
+.menu {
+    color: var(--white-color);
+    background: var(--dark-color);
+    margin: 0 auto;
+    padding: var(--spacing-sm)
+}
+.menu__title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: var(--spacing-xs) auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+
+}
+
+/* Menu section styling */
+
+/* Thay cho .menu-section .menu-list */
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--spacing-unit) * 25);
+    align-items: center;
+    justify-content: space-between; /* Chọn giá trị bạn đang định nhập trong ảnh */
+}
+
+/* Thay cho .menu-section .menu-item (dựa trên các thuộc tính trong ảnh) */
+.menu__item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
+}
+
+/* Thay cho .menu-section .menu-list .menu-item .menu-image */
+.menu__image {
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: var(--spacing-xs);
+    object-fit: contain;
+}
+/* Styling cho tên món ăn */
+/* Thay cho .menu-section .menu-list .menu-item .name */
+.menu__item-name {
+    margin: var(--spacing-xs) 0;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
+
+.menu__item-text {
+    font-size: var(--font-size-m);
+}
+
+/* Responsive media query code for max width 1024px */
+@media screen and (max-width: 1024px) {
+    /* Thay cho .menu-section .menu-list */
+    .menu__list {
+        gap: var(--spacing-2xl);
+    }
+
+    /* Thay cho .menu-section .menu-list .menu-item */
+    .menu__item {
+        width: calc(100% / 3 - 60px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .menu__list {
+        gap: var(--spacing-lg);
+    }
+
+    /* Thay cho .menu-section .menu-list .menu-item */
+    .menu__item {
+        width: calc(100% / 2 - 30px);
+    }
+
+    /* Thay cho .menu-section .menu-list .menu-item .menu-image */
+    .menu__image {
+        max-width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    /* Thay cho .menu-section .menu-list */
+    .menu__list {
+        gap: var(--spacing-2xl);
+    }
+
+    /* Thay cho .menu-section .menu-list .menu-item */
+    .menu__item {
+        width: 100%;
+    }
+}
+
+
+
