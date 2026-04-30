@@ -7,6 +7,7 @@
     <title>Coffee Website</title>
     <!-- Linking Font awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -133,7 +134,99 @@
                 </ul>
             </div>
         </section>
+
+        <section class="testimonials">
+            <h2 class="testimonials__title">Testimonials</h2>
+            <div class="testimonials__content">
+                <div class="testimonials__slider swiper">
+                    <div class="testimonials__wrapper">
+                        <ul class="testimonials__list swiper-wrapper">
+                            <li class="testimonials__item swiper-slide">
+                                <img src="images/user-1.jpg" alt="User" class="testimonials__image">
+                                <h3 class="testimonials__name">Sarah Johnson</h3>
+                                <i class="testimonials__feedback">
+                                    "Loved the French roast. Perfectly balanced and rich. Will order again!"
+                                </i>
+                            </li>
+
+                            <li class="testimonials__item swiper-slide">
+                                <img src="images/user-2.jpg" alt="User" class="testimonials__image">
+                                <h3 class="testimonials__name">James Wilson</h3>
+                                <i class="testimonials__feedback">
+                                    "Great espresso blend! Smooth and bold flavor. Fast shipping too!"
+                                </i>
+                            </li>
+
+                            <li class="testimonials__item swiper-slide">
+                                <img src="images/user-3.jpg" alt="User" class="testimonials__image">
+                                <h3 class="testimonials__name">Michael Brown</h3>
+                                <i class="testimonials__feedback">
+                                    "Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"
+                                </i>
+                            </li>
+
+                            <li class="testimonials__item swiper-slide">
+                                <img src="images/user-4.jpg" alt="User" class="testimonials__image">
+                                <h3 class="testimonials__name">Emily Harris</h3>
+                                <i class="testimonials__feedback">
+                                    "Excellent quality! Fresh beans and quick delivery. Highly recommend."
+                                </i>
+                            </li>
+
+                            <li class="testimonials__item swiper-slide">
+                                <img src="images/user-5.jpg" alt="User" class="testimonials__image">
+                                <h3 class="testimonials__name">Anthony Thompson</h3>
+                                <i class="testimonials__feedback">
+                                    "Best decaf I've tried! Smooth and flavorful. Arrived promptly."
+                                </i>
+                            </li>
+
+                        </ul>
+
+                        <div class="testimonials__pagination swiper-pagination"></div>
+                        <div class="testimonials__button testimonials__button--prev swiper-button-prev"></div>
+                        <div class="testimonials__button testimonials__button--next swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+    <h2 class="gallery__title">Gallery</h2>
+
+    <div class="gallery__content">
+        <ul class="gallery__list">
+            <li class="gallery__item">
+                <img src="images/gallery-1.jpg" alt="Gallery"
+                     class="gallery__image">
+            </li>
+            <li class="gallery__item">
+                <img src="images/gallery-2.jpg" alt="Gallery"
+                     class="gallery__image">
+            </li>
+            <li class="gallery__item">
+                <img src="images/gallery-3.jpg" alt="Gallery"
+                     class="gallery__image">
+            </li>
+            <li class="gallery__item">
+                <img src="images/gallery-4.jpg" alt="Gallery"
+                     class="gallery__image">
+            </li>
+            <li class="gallery__item">
+                <img src="images/gallery-5.jpg" alt="Gallery"
+                     class="gallery__image">
+            </li>
+            <li class="gallery__item">
+                <img src="images/gallery-6.jpg" alt="Gallery"
+                     class="gallery__image">
+            </li>
+        </ul>
+    </div>
+</section>
     </main>
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
