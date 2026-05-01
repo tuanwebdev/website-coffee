@@ -1,0 +1,70 @@
+/* =========================
+   FOOTER
+========================= */
+.footer-section {
+  padding: 20px 0;
+  background: var(--dark-color);
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.footer-section .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  max-width: var(--site-max-width);
+  padding: var(--spacing-sm);
+}
+
+/* =========================
+   COMMON TEXT & LINK
+========================= */
+.footer-section :where(
+  .copyright-text,
+  .social-link,
+  .policy-link
+) {
+  color: var(--white-color);
+  transition: 0.3s ease;
+}
+
+/* =========================
+   SOCIAL
+========================= */
+.footer-section .social-link-list {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-section .social-link {
+  font-size: var(--font-size-l);
+}
+
+.footer-section .social-link:hover {
+  color: var(--secondary-color);
+}
+
+/* =========================
+   POLICY
+========================= */
+.footer-section .policy-text .policy-link:hover {
+  color: var(--secondary-color);
+}
+
+.footer-section .policy-text .separator {
+  margin: 0 5px;
+  color: var(--white-color);
+}
+
+/* =========================
+   RESPONSIVE (<= 640px)
+========================= */
+@media screen and (max-width: 640px) {
+  .footer-section .section-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

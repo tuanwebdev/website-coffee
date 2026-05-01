@@ -1,58 +1,79 @@
-.menu__title {
-    text-align: center;
-    padding: var(--spacing-2xl) 0 calc(var(--spacing-unit) * 25);
-    text-transform: uppercase;
-    font-size: var(--font-size-xl);
-}
+/* =========================
+   MENU SECTION
+========================= */
 .menu {
+    margin: 0 auto;
+    padding: var(--spacing-sm);
+
     color: var(--white-color);
     background: var(--dark-color);
-    margin: 0 auto;
-    padding: var(--spacing-sm)
 }
+
+/* =========================
+   TITLE
+========================= */
+.menu__title {
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: var(--spacing-2xl) 0 calc(var(--spacing-unit) * 25);
+    font-size: var(--font-size-xl);
+}
+
 .menu__title::after {
     content: "";
+    display: block;
+
     width: 80px;
     height: 5px;
-    display: block;
     margin: var(--spacing-xs) auto 0;
+
     border-radius: var(--border-radius-s);
     background: var(--secondary-color);
-
 }
 
-/* Menu section styling */
-
-/* Thay cho .menu-section .menu-list */
+/* =========================
+   LIST (LAYOUT)
+========================= */
 .menu__list {
     display: flex;
     flex-wrap: wrap;
-    gap: calc(var(--spacing-unit) * 25);
     align-items: center;
-    justify-content: space-between; /* Chọn giá trị bạn đang định nhập trong ảnh */
+    justify-content: space-between;
+
+    gap: var(--spacing-2xl);
 }
 
-/* Thay cho .menu-section .menu-item (dựa trên các thuộc tính trong ảnh) */
+/* =========================
+   ITEM
+========================= */
 .menu__item {
     display: flex;
-    align-items: center;
-    text-align: center;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    width: calc(100% / 3 - 110px);
+
+    text-align: center;
+    width: calc(100% / 3 - 32px);
 }
 
-/* Thay cho .menu-section .menu-list .menu-item .menu-image */
+/* =========================
+   IMAGE
+========================= */
 .menu__image {
     max-width: 83%;
     aspect-ratio: 1;
-    margin-bottom: var(--spacing-xs);
     object-fit: contain;
+
+    margin-bottom: var(--spacing-xs);
 }
-/* Styling cho tên món ăn */
-/* Thay cho .menu-section .menu-list .menu-item .name */
+
+/* =========================
+   CONTENT
+========================= */
 .menu__item-name {
     margin: var(--spacing-xs) 0;
+
     font-size: var(--font-size-l);
     font-weight: var(--font-weight-semibold);
 }
@@ -61,48 +82,37 @@
     font-size: var(--font-size-m);
 }
 
-/* Responsive media query code for max width 1024px */
+/* =========================
+   RESPONSIVE (<= 1024px)
+========================= */
 @media screen and (max-width: 1024px) {
-    /* Thay cho .menu-section .menu-list */
-    .menu__list {
-        gap: var(--spacing-2xl);
-    }
-
-    /* Thay cho .menu-section .menu-list .menu-item */
     .menu__item {
-        width: calc(100% / 3 - 60px);
+        width: calc(100% / 3 - 24px);
     }
 }
 
+/* =========================
+   RESPONSIVE (<= 900px)
+========================= */
 @media screen and (max-width: 900px) {
-
     .menu__list {
         gap: var(--spacing-lg);
     }
 
-    /* Thay cho .menu-section .menu-list .menu-item */
     .menu__item {
-        width: calc(100% / 2 - 30px);
+        width: calc(100% / 2 - 16px);
     }
 
-    /* Thay cho .menu-section .menu-list .menu-item .menu-image */
     .menu__image {
         max-width: 200px;
     }
-    
 }
 
+/* =========================
+   RESPONSIVE (<= 640px)
+========================= */
 @media screen and (max-width: 640px) {
-    /* Thay cho .menu-section .menu-list */
-    .menu__list {
-        gap: var(--spacing-2xl);
-    }
-
-    /* Thay cho .menu-section .menu-list .menu-item */
     .menu__item {
         width: 100%;
     }
 }
-
-
-

@@ -1,35 +1,46 @@
-/* Block */
+/* =========================
+   TESTIMONIALS SECTION
+========================= */
 .testimonials {
   padding: 50px 0 100px;
   background: var(--light-pink-color);
 }
 
-/* Title */
+/* =========================
+   TITLE
+========================= */
 .testimonials__title {
   text-align: center;
-  padding: var(--spacing-2xl) 0 calc(var(--spacing-unit) * 25);
   text-transform: uppercase;
+
+  padding: var(--spacing-2xl) 0 calc(var(--spacing-unit) * 25);
   font-size: var(--font-size-xl);
 }
 
 .testimonials__title::after {
   content: "";
+  display: block;
+
   width: 80px;
   height: 5px;
-  display: block;
   margin: var(--spacing-xs) auto 0;
+
   border-radius: var(--border-radius-s);
   background: var(--secondary-color);
 }
 
-/* Content */
+/* =========================
+   CONTAINER
+========================= */
 .testimonials__content {
   margin: 0 auto;
   max-width: var(--site-max-width);
   padding: var(--spacing-sm);
 }
 
-/* Slider */
+/* =========================
+   SLIDER
+========================= */
 .testimonials__wrapper {
   overflow: hidden;
   margin: 0 60px 50px;
@@ -40,40 +51,52 @@
   padding: var(--spacing-sm);
 }
 
-/* Item */
+/* =========================
+   ITEM
+========================= */
 .testimonials__item {
   display: flex;
-  padding: 35px;
-  text-align: center;
   flex-direction: column;
   align-items: center;
+
+  padding: 35px;
+  text-align: center;
+  user-select: none;
 }
 
-/* Image */
+/* =========================
+   IMAGE
+========================= */
 .testimonials__image {
   width: 180px;
   height: 180px;
+
   object-fit: cover;
-  margin-bottom: 50px;
   border-radius: var(--border-radius-circle);
+
+  margin-bottom: 50px;
 }
 
-/* Name */
+/* =========================
+   CONTENT
+========================= */
 .testimonials__name {
-  margin: var(--spacing-xs) 0;
-  margin-bottom: 16px;
+  margin: var(--spacing-xs) 0 16px;
+
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-semibold);
 }
 
-/* Feedback */
 .testimonials__feedback {
-  line-height: 25px;
+  line-height: 1.6;
 }
 
-/* Buttons */
+/* =========================
+   BUTTON
+========================= */
 .testimonials__button {
   margin-top: -50px;
+
   color: var(--secondary-color);
   transition: 0.3s ease;
 }
@@ -82,9 +105,11 @@
   color: var(--primary-color);
 }
 
-
-/* Responsive */
+/* =========================
+   RESPONSIVE (<= 640px)
+========================= */
 @media screen and (max-width: 640px) {
+
   .testimonials__wrapper {
     margin: 0 0 30px;
   }

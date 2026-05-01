@@ -1,95 +1,112 @@
+/* =========================
+   ABOUT SECTION
+========================= */
 .about {
     padding: var(--spacing-sm);
     background: var(--light-pink-color);
-
 }
 
+/* =========================
+   TITLE
+========================= */
 .about__title {
     text-align: center;
-    padding: var(--spacing-2xl) 0 calc(var(--spacing-unit) * 25);
     text-transform: uppercase;
+
+    padding: var(--spacing-2xl) 0 calc(var(--spacing-unit) * 25);
     font-size: var(--font-size-xl);
+}
+
+.about__title::after {
+    content: "";
+    display: block;
+
+    width: 80px;
+    height: 5px;
+    margin: var(--spacing-xs) auto 0;
+
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.about__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xl);
+
+    margin: 0 auto;
+    max-width: var(--site-max-width);
 }
 
 .about__details {
     max-width: 50%;
 }
 
-.about__title::after {
-    content: "";
-    width: 80px;
-    height: 5px;
-    display: block;
-    margin: var(--spacing-xs) auto 0;
-    border-radius: var(--border-radius-s);
-    background: var(--secondary-color);
-
-}
-
-.about__container {
-    display: flex;
-    gap: var(--spacing-xl);
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: var(--site-max-width);
-}
-
-.about__title {
-    padding: 0;
-}
-
+/* =========================
+   IMAGE
+========================= */
 .about__image {
     width: 400px;
     height: 400px;
+
     object-fit: cover;
     border-radius: var(--border-radius-circle);
 }
 
+/* =========================
+   CONTENT
+========================= */
 .about__description {
-    line-height: var(--spacing-lg);
     margin: var(--spacing-xl) 0 var(--spacing-lg);
+
     text-align: center;
+    line-height: var(--spacing-lg);
     font-size: var(--font-size-m);
 }
 
-/* Container chứa các icon */
+/* =========================
+   SOCIAL
+========================= */
 .about__social-list {
     display: flex;
-    gap: var(--spacing-md);
     justify-content: center;
+    gap: var(--spacing-md);
 }
 
-/* Các link icon cá nhân */
 .about__social-link {
-    color: var(--primary-color);
     font-size: var(--font-size-l);
+    color: var(--primary-color);
     transition: 0.2s ease;
 }
 
-/* Hiệu ứng khi di chuột qua */
 .about__social-link:hover {
     color: var(--secondary-color);
 }
 
+/* =========================
+   RESPONSIVE (<= 900px)
+========================= */
 @media screen and (max-width: 900px) {
+
     .about__container {
-        display: flex;
-        /* Đảm bảo vẫn là flexbox */
-        gap: var(--spacing-2xl);
         flex-direction: column-reverse;
+        gap: var(--spacing-2xl);
     }
+
     .about__details {
         max-width: 100%;
     }
 
     .about__image {
         width: 100%;
-        height: 100%;
         max-width: 250px;
+
         aspect-ratio: 1;
+        height: auto;
         object-fit: cover;
-
     }
-
 }

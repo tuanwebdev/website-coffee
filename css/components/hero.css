@@ -1,82 +1,121 @@
-
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
     background-color: var(--primary-color);
-
 }
 
+/* =========================
+   HERO LAYOUT
+========================= */
 .hero__container {
     display: flex;
     align-items: center;
-    min-height: 100vh;
-    color: var(--white-color);
     justify-content: space-between;
+
+    min-height: 100vh;
     margin: 0 auto;
     max-width: var(--site-max-width);
-    padding: var(--spacing-sm)
+    padding: var(--spacing-sm);
+
+    color: var(--white-color);
 }
 
+/* =========================
+   HERO CONTENT
+========================= */
 .hero__title {
     font-size: var(--font-size-xxl);
     color: var(--secondary-color);
     font-family: "Miniver", "sans-serif";
 }
+
 .hero__subtitle {
     margin-top: var(--spacing-2xs);
     max-width: 70%;
+
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
 }
 
 .hero__description {
-    max-width:70%;
+    max-width: 70%;
     margin: var(--spacing-md) 0 var(--spacing-xl);
+
     font-size: var(--font-size-m);
 }
+
+/* =========================
+   ACTIONS (BUTTON GROUP)
+========================= */
 .hero__actions {
     display: flex;
     gap: var(--spacing-md);
 }
+
+/* =========================
+   BUTTON
+========================= */
 .hero__button {
     padding: var(--spacing-xs) var(--spacing-lg);
-    border: 2px solid transparent;
+
     color: var(--primary-color);
-    border-radius: var(--border-radius-m);
     background: var(--secondary-color);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-m);
+
     font-weight: var(--font-weight-medium);
     transition: 0.3s ease;
 }
+
+/* state + modifier */
 .hero__button:hover,
 .hero__button--secondary {
     color: var(--white-color);
-    border-color: var(--white-color);
     background: transparent;
+    border-color: var(--white-color);
 }
+
 .hero__button--secondary:hover {
     color: var(--primary-color);
-    border-color: var(--secondary-color);
     background: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
+
+/* =========================
+   IMAGE
+========================= */
 .hero__image-wrapper {
     max-width: var(--image-width);
     margin-right: var(--spacing-lg);
 }
 
+/* =========================
+   RESPONSIVE (<= 900px)
+========================= */
 @media screen and (max-width: 900px) {
 
+    /* layout */
+    .hero__container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+
+        gap: var(--spacing-xl);
+        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+    }
+
+    /* text */
     .hero__content :is(.hero__subtitle, .hero__description) {
         max-width: 100%;
     }
+
+    /* actions */
     .hero__actions {
         justify-content: center;
     }
-    .hero__container {
-        gap: var(--spacing-xl);
-        text-align: center;
-        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
 
+    /* image */
     .hero__image-wrapper {
         max-width: 270px;
         margin-right: 0;

@@ -25,19 +25,19 @@
                     <a href="#" class="navbar__link">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">About</a>
+                    <a href="#about" class="navbar__link">About</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">Menu</a>
+                    <a href="#menu" class="navbar__link">Menu</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">Testimanials</a>
+                    <a href="#testimanials" class="navbar__link">Testimanials</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">Gallery</a>
+                    <a href="#gallery" class="navbar__link">Gallery</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#" class="navbar__link">Contact</a>
+                    <a href="#contact" class="navbar__link">Contact</a>
                 </li>
             </ul>
 
@@ -67,7 +67,7 @@
         </section>
 
         <!-- About section -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__container">
                 <div class="about__image-wrapper">
                     <img src="images/about-image.jpg" alt="About" class="about__image">
@@ -90,7 +90,7 @@
         </section>
         
         <!-- Menu section -->
-        <section class="menu">
+        <section class="menu" id="menu">
             <h2 class="menu__title">Our Menu</h2>
             <div class="menu__container">
                 <ul class="menu__list">
@@ -135,7 +135,7 @@
             </div>
         </section>
 
-        <section class="testimonials">
+        <section class="testimonials" id="testimanials">
             <h2 class="testimonials__title">Testimonials</h2>
             <div class="testimonials__content">
                 <div class="testimonials__slider swiper">
@@ -192,7 +192,7 @@
             </div>
         </section>
 
-        <section class="gallery">
+        <section class="gallery" id="gallery">
     <h2 class="gallery__title">Gallery</h2>
 
     <div class="gallery__content">
@@ -224,6 +224,72 @@
         </ul>
     </div>
 </section>
+
+    <!-- Contact section -->
+<section class="contact" id="contact">
+  <h2 class="contact__title">Contact Us</h2>
+
+  <div class="contact__content">
+    
+    <ul class="contact__list">
+      <li class="contact__item">
+        <i class="contact__icon fa-solid fa-location-crosshairs"></i>
+        <p class="contact__text">123 Campsite Avenue, Wilderness, CA 98765</p>
+      </li>
+
+      <li class="contact__item">
+        <i class="contact__icon fa-regular fa-envelope"></i>
+        <p class="contact__text">info@coffeeshopwebsite.com</p>
+      </li>
+
+      <li class="contact__item">
+        <i class="contact__icon fa-solid fa-phone"></i>
+        <p class="contact__text">(123) 456-7890</p>
+      </li>
+
+      <li class="contact__item">
+        <i class="contact__icon fa-regular fa-clock"></i>
+        <p class="contact__text">Monday - Friday: 9:00 AM - 5:00 PM</p>
+      </li>
+
+      <li class="contact__item">
+        <i class="contact__icon fa-regular fa-clock"></i>
+        <p class="contact__text">Sunday: Closed</p>
+      </li>
+
+      <li class="contact__item">
+        <i class="contact__icon fa-solid fa-globe"></i>
+        <p class="contact__text">www.codingnepalweb.com</p>
+      </li>
+    </ul>
+
+    <form action="#" class="contact__form">
+      <input type="text" placeholder="Your name" class="contact__input" required>
+      <input type="email" placeholder="Your email" class="contact__input" required>
+      <textarea placeholder="Your message" class="contact__input" required></textarea>
+      <button class="contact__button">Submit</button>
+    </form>
+
+  </div>
+</section>
+
+<footer class="footer-section">
+  <div class="section-content">
+    <p class="copyright-text">© 2024 Coffee Shop</p>
+
+    <div class="social-link-list">
+      <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+
+    <p class="policy-text">
+      <a href="#" class="policy-link">Privacy policy</a>
+      <span class="separator">•</span>
+      <a href="#" class="policy-link">Refund policy</a>
+    </p>
+  </div>
+</footer>
     </main>
     <!-- Linking Swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
