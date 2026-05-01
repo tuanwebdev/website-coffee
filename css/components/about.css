@@ -61,7 +61,7 @@
    CONTENT
 ========================= */
 .about__description {
-    margin: var(--spacing-xl) 0 var(--spacing-lg);
+    margin: var(--spacing-md) 0 var(--spacing-lg);
 
     text-align: center;
     line-height: var(--spacing-lg);
@@ -85,28 +85,4 @@
 
 .about__social-link:hover {
     color: var(--secondary-color);
-}
-
-/* =========================
-   RESPONSIVE (<= 900px)
-========================= */
-@media screen and (max-width: 900px) {
-
-    .about__container {
-        flex-direction: column-reverse;
-        gap: var(--spacing-2xl);
-    }
-
-    .about__details {
-        max-width: 100%;
-    }
-
-    .about__image {
-        width: 100%;
-        max-width: 250px;
-
-        aspect-ratio: 1;
-        height: auto;
-        object-fit: cover;
-    }
 }

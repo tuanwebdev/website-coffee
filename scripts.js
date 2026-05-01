@@ -16,7 +16,7 @@ if (menuCloseButton) {
 }
 
 navLinks.forEach(link =>{
-  link.addEventListener('click', ()=>menuOpenButton.click())
+  link.addEventListener('click', ()=>menuCloseButton.click())
 })
 
 // Swiper

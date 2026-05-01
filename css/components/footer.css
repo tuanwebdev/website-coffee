@@ -58,13 +58,3 @@
   margin: 0 5px;
   color: var(--white-color);
 }
-
-/* =========================
-   RESPONSIVE (<= 640px)
-========================= */
-@media screen and (max-width: 640px) {
-  .footer-section .section-content {
-    flex-direction: column;
-    gap: 20px;
-  }
-}

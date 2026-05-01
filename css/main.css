@@ -1,8 +1,15 @@
-/* Importing Google fonts */
+/* =========================
+   IMPORTS
+========================= */
+
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* Base */
 @import url('base/reset.css');
 @import url('base/variables.css');
 
+/* Components */
 @import url('components/header.css');
 @import url('components/hero.css');
 @import url('components/about.css');
@@ -11,3 +18,195 @@
 @import url('components/gallery.css');
 @import url('components/contact.css');
 @import url('components/footer.css');
+
+
+/* =========================
+   RESPONSIVE (<= 640px)
+========================= */
+@media screen and (max-width: 640px) {
+
+  .testimonials__wrapper {
+    margin: 0 0 30px;
+  }
+
+  .testimonials__button {
+    display: none;
+  }
+
+  .menu__list {
+    gap: var(--spacing-2xl);
+    padding: var(--spacing-lg);
+  }
+
+  .menu__item {
+    width: 100%;
+  }
+
+  .gallery__item {
+    width: 100%;
+  }
+
+  .footer-section .section-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE (<= 900px)
+========================= */
+@media screen and (max-width: 900px) {
+
+  /* ===== TYPOGRAPHY ===== */
+  :root {
+    --font-size-m: 1rem;
+    --font-size-l: 1.3rem;
+    --font-size-xL: 1.5rem;
+    --font-size-xxl: 1.8rem;
+  }
+
+  /* ===== OVERLAY ===== */
+  body.is-mobile-menu-open header::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(var(--spacing-3xs));
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  /* ===== MENU BUTTON (SHOW) ===== */
+  .navbar :where(#menu-close-button, #menu-open-button) {
+    display: block;
+    font-size: var(--font-size-l);
+  }
+
+  .navbar #menu-open-button {
+    color: var(--white-color);
+  }
+
+  .navbar #menu-close-button {
+    position: absolute;
+    inset: var(--spacing-lg) var(--spacing-lg) auto auto;
+  }
+
+  /* ===== MOBILE MENU ===== */
+  .navbar__menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+
+    width: 300px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(var(--spacing-unit) * 25);
+
+    background: var(--white-color);
+    transition: left 0.3s ease;
+  }
+
+  /* ===== MENU ACTIVE STATE ===== */
+  body.is-mobile-menu-open .navbar__menu {
+    left: 0;
+  }
+
+  /* ===== MOBILE LINK ===== */
+  .navbar__link {
+    display: block;
+    margin-top: var(--spacing-sm);
+    font-size: var(--font-size-l);
+    color: var(--dark-color);
+  }
+
+  /* ===== MENU ===== */
+  .menu__list {
+    gap: var(--spacing-lg);
+  }
+
+  .menu__item {
+    width: calc(100% / 2 - 30px);
+  }
+
+  .menu__image {
+    max-width: 200px;
+  }
+
+  /* ===== HERO ===== */
+  .hero__container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+
+    gap: var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+  }
+
+  .hero__content :is(.hero__subtitle, .hero__description) {
+    max-width: 100%;
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+  .hero__image-wrapper {
+    max-width: 270px;
+    margin-right: 0;
+  }
+
+  /* ===== GALLERY ===== */
+  .gallery__item {
+    width: calc(100% / 2 - 16px);
+  }
+
+  /* ===== CONTACT ===== */
+  .contact__content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .contact__form {
+    max-width: 100%;
+  }
+
+  /* ===== ABOUT ===== */
+  .about__container {
+    flex-direction: column-reverse;
+    gap: var(--spacing-2xl);
+  }
+
+  .about__details {
+    max-width: 100%;
+  }
+
+  .about__image {
+    width: 100%;
+    max-width: 250px;
+
+    aspect-ratio: 1;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE (<=1024px)
+========================= */
+@media screen and (max-width: 1024px) {
+
+  .menu__list {
+    gap: var(--spacing-2xl);
+  }
+
+  .menu__item {
+    width: calc(100% / 3 - 60px);
+  }
+
+}

@@ -89,35 +89,3 @@
     max-width: var(--image-width);
     margin-right: var(--spacing-lg);
 }
-
-/* =========================
-   RESPONSIVE (<= 900px)
-========================= */
-@media screen and (max-width: 900px) {
-
-    /* layout */
-    .hero__container {
-        flex-direction: column-reverse;
-        justify-content: center;
-        text-align: center;
-
-        gap: var(--spacing-xl);
-        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
-    }
-
-    /* text */
-    .hero__content :is(.hero__subtitle, .hero__description) {
-        max-width: 100%;
-    }
-
-    /* actions */
-    .hero__actions {
-        justify-content: center;
-    }
-
-    /* image */
-    .hero__image-wrapper {
-        max-width: 270px;
-        margin-right: 0;
-    }
-}

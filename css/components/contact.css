@@ -122,18 +122,3 @@ textarea.contact__input {
   color: var(--primary-color);
   background: transparent;
 }
-
-/* =========================
-   RESPONSIVE (<= 900px)
-========================= */
-@media screen and (max-width: 900px) {
-
-  .contact__content {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .contact__form {
-    max-width: 100%;
-  }
-}
