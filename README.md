@@ -34,8 +34,8 @@
 
 ## Hướng dẫn chạy
 
-1. Mở thư mục dự án `c:\coffee-website`
-2. Mở file `index.html` bằng trình duyệt
+1. Mở thư mục dự án
+2. Mở file `index.html` bằng trình duyệt(nếu bạn dùng vs code click chuột phải chọn open live server)
 
 > Nếu muốn xem giao diện chuẩn, chỉ cần mở trực tiếp file HTML trong trình duyệt modern.
 
