@@ -1,46 +1,67 @@
-# Coffee Website
 
-## Giới thiệu
+# ☕ Website Quán Cà Phê
 
-Đây là một dự án trang web tĩnh giới thiệu quán cà phê. Mục tiêu của dự án là xây dựng giao diện trang đích (landing page) đẹp, thân thiện và phù hợp cho một quán cà phê hoặc dịch vụ đồ uống.
+## 📌 Tổng quan
 
-## Tính năng chính
+Đây là một dự án **static landing page** (trang đích tĩnh) dành cho quán cà phê.
+Mục tiêu của dự án là xây dựng một giao diện hiện đại, thân thiện với người dùng và tối ưu hiển thị trên nhiều thiết bị (responsive).
 
-- Thanh điều hướng cố định với menu responsive cho thiết bị di động
-- Phần hero hấp dẫn với hình ảnh và nút hành động
-- Mục giới thiệu About Us
-- Danh mục thực đơn với các nhóm đồ uống và món ăn
-- Phần đánh giá khách hàng sử dụng slider Swiper
-- Thư viện ảnh Gallery
-- Phần liên hệ Contact và biểu mẫu gửi tin nhắn
-- Footer với thông tin bản quyền và liên kết mạng xã hội
+Dự án phù hợp để luyện tập **HTML, CSS, JavaScript** và tổ chức mã nguồn theo cấu trúc rõ ràng (BEM + modular CSS).
 
-## Cấu trúc dự án
+---
 
-- `index.html` - Trang chính của website
-- `scripts.js` - Tập lệnh JavaScript cho menu mobile và slider Swiper
-- `css/main.css` - Kiểu dáng chính cho toàn bộ trang
-- `css/base/` - Các kiểu cơ bản như reset và biến CSS
-- `css/components/` - Các thành phần CSS cho từng phần của trang
-- `images/` - Thư mục chứa hình ảnh sử dụng trong giao diện
+## 🚀 Tính năng nổi bật
+* Menu điều hướng trên di động (đóng/mở linh hoạt)
+* Slider đánh giá từ khách hàng (sử dụng thư viện Swiper.js)
+* Form liên hệ (phần giao diện, chưa tích hợp xử lý dữ liệu)
 
-## Công nghệ sử dụng
+---
 
-- HTML
-- CSS
-- JavaScript
-- Font Awesome cho icon
-- Swiper.js cho slider đánh giá khách hàng
+### Cấu trúc thư mục:
 
-## Hướng dẫn chạy
+* `index.html` – Trang chủ chính
+* `scripts.js` – Xử lý logic (menu mobile, slider)
+* `css/base/` – Reset CSS + Khai báo biến (hệ thống thiết kế)
+* `css/components/` – Style chi tiết cho từng thành phần (quy tắc BEM)
+* `images/` – Kho tài nguyên hình ảnh
 
-1. Mở thư mục dự án `c:\coffee-website`
-2. Mở file `index.html` bằng trình duyệt
+---
 
-> Nếu muốn xem giao diện chuẩn, chỉ cần mở trực tiếp file HTML trong trình duyệt modern.
+## 🛠️ Công nghệ sử dụng
 
-## Ghi chú
+* HTML5
+* CSS3 (BEM + Thiết kế Responsive)
+* JavaScript (Vanilla JS)
+* Swiper.js (Hỗ trợ slider)
+* Font Awesome (Hệ thống biểu tượng)
 
-- Dự án không có backend, tất cả nội dung là tĩnh.
-- Biểu mẫu Contact chỉ có giao diện và chưa gửi dữ liệu về máy chủ.
-- Bạn có thể tuỳ chỉnh nội dung, hình ảnh và màu sắc bằng cách sửa CSS và HTML.
+---
+
+## ▶️ Hướng dẫn cài đặt
+
+1. Clone (Sao chép) hoặc tải project về máy tính.
+2. Mở file `index.html` bằng trình duyệt web.
+
+Hoặc sử dụng VS Code:
+
+* Click chuột phải vào file → chọn **Open with Live Server**.
+
+---
+
+## ⚠️ Lưu ý
+
+* Đây là **website tĩnh** (không bao gồm hệ thống quản trị/backend).
+* Form Liên hệ chỉ mang tính chất minh họa giao diện.
+* Bạn có thể dễ dàng tùy chỉnh:
+  * Nội dung văn bản (file HTML).
+  * Màu sắc & bố cục (thông qua các biến CSS).
+  * Hiệu ứng tương tác (file JavaScript).
+
+---
+
+## 🎯 Mục tiêu học tập
+
+* Thành thạo cách chia bố cục website theo từng **Section**.
+* Áp dụng quy tắc đặt tên **BEM (Block Element Modifier)**.
+* Xây dựng giao diện tương thích đa thiết bị (Responsive).
+* Cách quản lý và tách file CSS theo module để dễ dàng mở rộng.
