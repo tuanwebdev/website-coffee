@@ -11,19 +11,6 @@ Dự án phù hợp để luyện tập **HTML, CSS, JavaScript** và tổ chứ
 ---
 
 ## 🚀 Tính năng nổi bật
-
-### 🧩 Thành phần giao diện (UI Layout)
-
-* **Thanh điều hướng (Navbar)** cố định khi cuộn trang
-* **Trang đầu (Hero section)** với hình ảnh nổi bật và nút kêu gọi hành động (CTA)
-* **Giới thiệu (About Us)** – câu chuyện về quán
-* **Thực đơn (Menu)** – danh mục đồ uống & món ăn
-* **Bộ sưu tập (Gallery)** – thư viện hình ảnh không gian quán
-* **Liên hệ (Contact)** – biểu mẫu và thông tin địa chỉ
-* **Chân trang (Footer)** – bản quyền & liên kết mạng xã hội
-
-### ⚙️ Chức năng tương tác
-
 * Menu điều hướng trên di động (đóng/mở linh hoạt)
 * Slider đánh giá từ khách hàng (sử dụng thư viện Swiper.js)
 * Form liên hệ (phần giao diện, chưa tích hợp xử lý dữ liệu)
