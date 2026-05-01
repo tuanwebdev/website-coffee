@@ -1,83 +1,80 @@
 
-# ☕ Coffee Website
+# ☕ Website Quán Cà Phê
 
-## 📌 Overview
+## 📌 Tổng quan
 
-Đây là một dự án **static landing page** cho quán cà phê.
+Đây là một dự án **static landing page** (trang đích tĩnh) dành cho quán cà phê.
 Mục tiêu của dự án là xây dựng một giao diện hiện đại, thân thiện với người dùng và tối ưu hiển thị trên nhiều thiết bị (responsive).
 
-Dự án phù hợp để luyện tập **HTML, CSS, JavaScript** và tổ chức code theo cấu trúc rõ ràng (BEM + modular CSS).
+Dự án phù hợp để luyện tập **HTML, CSS, JavaScript** và tổ chức mã nguồn theo cấu trúc rõ ràng (BEM + modular CSS).
 
 ---
 
-## 🚀 Features
+## 🚀 Tính năng nổi bật
 
-### 🧩 Sections (UI Layout)
+### 🧩 Thành phần giao diện (UI Layout)
 
-* **Header / Navbar** cố định (sticky)
-* **Hero section** với hình ảnh nổi bật và call-to-action
-* **About Us** – giới thiệu về quán
-* **Menu** – danh mục đồ uống & món ăn
-* **Gallery** – thư viện hình ảnh
-* **Contact** – thông tin liên hệ
-* **Footer** – bản quyền & liên kết mạng xã hội
+* **Thanh điều hướng (Navbar)** cố định khi cuộn trang
+* **Trang đầu (Hero section)** với hình ảnh nổi bật và nút kêu gọi hành động (CTA)
+* **Giới thiệu (About Us)** – câu chuyện về quán
+* **Thực đơn (Menu)** – danh mục đồ uống & món ăn
+* **Bộ sưu tập (Gallery)** – thư viện hình ảnh không gian quán
+* **Liên hệ (Contact)** – biểu mẫu và thông tin địa chỉ
+* **Chân trang (Footer)** – bản quyền & liên kết mạng xã hội
 
-### ⚙️ Interactive Features
+### ⚙️ Chức năng tương tác
 
-* Responsive mobile menu (toggle mở/đóng)
-* Slider đánh giá khách hàng (sử dụng Swiper.js)
-* Form liên hệ (UI, chưa tích hợp backend)
+* Menu điều hướng trên di động (đóng/mở linh hoạt)
+* Slider đánh giá từ khách hàng (sử dụng thư viện Swiper.js)
+* Form liên hệ (phần giao diện, chưa tích hợp xử lý dữ liệu)
 
 ---
 
-### Mô tả:
+### Cấu trúc thư mục:
 
-* `index.html` – Trang chính
+* `index.html` – Trang chủ chính
 * `scripts.js` – Xử lý logic (menu mobile, slider)
-* `css/base/` – Reset + biến CSS (design system)
-* `css/components/` – Style theo từng section (BEM)
-* `images/` – Tài nguyên hình ảnh
+* `css/base/` – Reset CSS + Khai báo biến (hệ thống thiết kế)
+* `css/components/` – Style chi tiết cho từng thành phần (quy tắc BEM)
+* `images/` – Kho tài nguyên hình ảnh
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Công nghệ sử dụng
 
 * HTML5
-* CSS3 (BEM + Responsive Design)
+* CSS3 (BEM + Thiết kế Responsive)
 * JavaScript (Vanilla JS)
-* Swiper.js (slider)
-* Font Awesome (icons)
+* Swiper.js (Hỗ trợ slider)
+* Font Awesome (Hệ thống biểu tượng)
 
 ---
 
-## ▶️ Getting Started
+## ▶️ Hướng dẫn cài đặt
 
-1. Clone hoặc tải project về máy
-2. Mở file `index.html` bằng trình duyệt
+1. Clone (Sao chép) hoặc tải project về máy tính.
+2. Mở file `index.html` bằng trình duyệt web.
 
-Hoặc dùng VS Code:
+Hoặc sử dụng VS Code:
 
-* Click chuột phải → **Open with Live Server**
+* Click chuột phải vào file → chọn **Open with Live Server**.
 
 ---
 
-## ⚠️ Notes
+## ⚠️ Lưu ý
 
-* Đây là **static website** (không có backend)
-* Form Contact chỉ mang tính minh họa (không gửi dữ liệu)
-* Có thể dễ dàng tuỳ chỉnh:
-
-  * Nội dung (HTML)
-  * Màu sắc & layout (CSS variables)
-  * Hành vi (JavaScript)
+* Đây là **website tĩnh** (không bao gồm hệ thống quản trị/backend).
+* Form Liên hệ chỉ mang tính chất minh họa giao diện.
+* Bạn có thể dễ dàng tùy chỉnh:
+  * Nội dung văn bản (file HTML).
+  * Màu sắc & bố cục (thông qua các biến CSS).
+  * Hiệu ứng tương tác (file JavaScript).
 
 ---
 
 ## 🎯 Mục tiêu học tập
 
-* Làm quen với cách chia layout theo **section**
-* Áp dụng **BEM naming convention**
-* Xây dựng UI responsive
-* Tách CSS theo module (scalable structure)
-
-
+* Thành thạo cách chia bố cục website theo từng **Section**.
+* Áp dụng quy tắc đặt tên **BEM (Block Element Modifier)**.
+* Xây dựng giao diện tương thích đa thiết bị (Responsive).
+* Cách quản lý và tách file CSS theo module để dễ dàng mở rộng.
