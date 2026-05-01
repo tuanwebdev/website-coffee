@@ -1,46 +1,83 @@
-# Coffee Website
 
-## Giới thiệu
+# ☕ Coffee Website
 
-Đây là một dự án trang web tĩnh giới thiệu quán cà phê. Mục tiêu của dự án là xây dựng giao diện trang đích (landing page) đẹp, thân thiện và phù hợp cho một quán cà phê hoặc dịch vụ đồ uống.
+## 📌 Overview
 
-## Tính năng chính
+Đây là một dự án **static landing page** cho quán cà phê.
+Mục tiêu của dự án là xây dựng một giao diện hiện đại, thân thiện với người dùng và tối ưu hiển thị trên nhiều thiết bị (responsive).
 
-- Thanh điều hướng cố định với menu responsive cho thiết bị di động
-- Phần hero hấp dẫn với hình ảnh và nút hành động
-- Mục giới thiệu About Us
-- Danh mục thực đơn với các nhóm đồ uống và món ăn
-- Phần đánh giá khách hàng sử dụng slider Swiper
-- Thư viện ảnh Gallery
-- Phần liên hệ Contact và biểu mẫu gửi tin nhắn
-- Footer với thông tin bản quyền và liên kết mạng xã hội
+Dự án phù hợp để luyện tập **HTML, CSS, JavaScript** và tổ chức code theo cấu trúc rõ ràng (BEM + modular CSS).
 
-## Cấu trúc dự án
+---
 
-- `index.html` - Trang chính của website
-- `scripts.js` - Tập lệnh JavaScript cho menu mobile và slider Swiper
-- `css/main.css` - Kiểu dáng chính cho toàn bộ trang
-- `css/base/` - Các kiểu cơ bản như reset và biến CSS
-- `css/components/` - Các thành phần CSS cho từng phần của trang
-- `images/` - Thư mục chứa hình ảnh sử dụng trong giao diện
+## 🚀 Features
 
-## Công nghệ sử dụng
+### 🧩 Sections (UI Layout)
 
-- HTML
-- CSS
-- JavaScript
-- Font Awesome cho icon
-- Swiper.js cho slider đánh giá khách hàng
+* **Header / Navbar** cố định (sticky)
+* **Hero section** với hình ảnh nổi bật và call-to-action
+* **About Us** – giới thiệu về quán
+* **Menu** – danh mục đồ uống & món ăn
+* **Gallery** – thư viện hình ảnh
+* **Contact** – thông tin liên hệ
+* **Footer** – bản quyền & liên kết mạng xã hội
 
-## Hướng dẫn chạy
+### ⚙️ Interactive Features
 
-1. Mở thư mục dự án
-2. Mở file `index.html` bằng trình duyệt(nếu bạn dùng vs code click chuột phải chọn open live server)
+* Responsive mobile menu (toggle mở/đóng)
+* Slider đánh giá khách hàng (sử dụng Swiper.js)
+* Form liên hệ (UI, chưa tích hợp backend)
 
-> Nếu muốn xem giao diện chuẩn, chỉ cần mở trực tiếp file HTML trong trình duyệt modern.
+---
 
-## Ghi chú
+### Mô tả:
 
-- Dự án không có backend, tất cả nội dung là tĩnh.
-- Biểu mẫu Contact chỉ có giao diện và chưa gửi dữ liệu về máy chủ.
-- Bạn có thể tuỳ chỉnh nội dung, hình ảnh và màu sắc bằng cách sửa CSS và HTML.
+* `index.html` – Trang chính
+* `scripts.js` – Xử lý logic (menu mobile, slider)
+* `css/base/` – Reset + biến CSS (design system)
+* `css/components/` – Style theo từng section (BEM)
+* `images/` – Tài nguyên hình ảnh
+
+---
+
+## 🛠️ Tech Stack
+
+* HTML5
+* CSS3 (BEM + Responsive Design)
+* JavaScript (Vanilla JS)
+* Swiper.js (slider)
+* Font Awesome (icons)
+
+---
+
+## ▶️ Getting Started
+
+1. Clone hoặc tải project về máy
+2. Mở file `index.html` bằng trình duyệt
+
+Hoặc dùng VS Code:
+
+* Click chuột phải → **Open with Live Server**
+
+---
+
+## ⚠️ Notes
+
+* Đây là **static website** (không có backend)
+* Form Contact chỉ mang tính minh họa (không gửi dữ liệu)
+* Có thể dễ dàng tuỳ chỉnh:
+
+  * Nội dung (HTML)
+  * Màu sắc & layout (CSS variables)
+  * Hành vi (JavaScript)
+
+---
+
+## 🎯 Mục tiêu học tập
+
+* Làm quen với cách chia layout theo **section**
+* Áp dụng **BEM naming convention**
+* Xây dựng UI responsive
+* Tách CSS theo module (scalable structure)
+
+
